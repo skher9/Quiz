@@ -1,0 +1,23 @@
+.Header-one {
+  display: flex;
+  background-color: #beadfa;
+}
+
+.Header-two {
+  background-color: #d0bfff;
+}
+
+.Body {
+  background-color: #dfccfb;
+}
+
+.Footer{
+  background-color: #beadfa;
+}
+
+fieldset {
+  border: 0;
+}
+ul {
+  list-style-type: none;
+}
