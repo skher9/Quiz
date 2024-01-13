@@ -26,11 +26,12 @@ const Triangle = () => {
     const id = e.target.id;
     const inputVal = e.target.value;
     Addval(inputVal, id);
+    setinput(inputVal)
   };
 
   const Addval = (inputVal, id) => {
     Angle.forEach((element) => {
-      if (element.key == id) {
+      if (element.key === id) {
         element.value = inputVal;
       }
     });
@@ -45,7 +46,7 @@ const Triangle = () => {
       Ans = Ans + val;
     });
 
-    if (Ans == 180) {
+    if (Ans === 180) {
       return true;
     } else {
       return false;
@@ -56,7 +57,7 @@ const Triangle = () => {
     let Final = false;
     Final = checkTriangle();
 
-    if (Final == true) {
+    if (Final === true) {
       setAns("Yay, the angles form a triangle!");
     } else {
       setAns("Oh Oh! The angle doesn't form a triangle");
