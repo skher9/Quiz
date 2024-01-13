@@ -10,7 +10,7 @@ const Hypotenuse = () => {
 
   function add(Inputval, key) {
     Input.forEach((element) => {
-      if (element.id == key) {
+      if (element.id === key) {
         element.value = Inputval;
       }
     });
@@ -27,16 +27,17 @@ const Hypotenuse = () => {
     let heightVal = 0;
     let Final = 0;
 
-    Input.map((element) => {
-      if (element.id == "Base") {
+    Input.forEach((element) => {
+      if (element.id === "Base") {
         baseVal = element.value;
         console.log(baseVal);
       } else {
-        if (element.id == "Height") {
+        if (element.id === "Height") {
           heightVal = element.value;
           console.log(heightVal);
         }
       }
+      
     });
 
     Final = Math.hypot(baseVal, heightVal);

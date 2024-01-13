@@ -1,8 +1,5 @@
 import "./App.css";
-import Quiz from "./Quiz";
-import Triangle from "./Triangle";
-import Hypotenuse from "./Hypotenuse";
-import Areaoftriangle from "./Areaoftriangle";
+
 
 function App() {
   return (

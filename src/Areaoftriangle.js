@@ -23,7 +23,7 @@ const Areaoftriangle = () => {
 
   function add(Val, key) {
     Sides.forEach((element) => {
-      if (element.id == key) {
+      if (element.id === key) {
         element.value = Val;
       }
     });
